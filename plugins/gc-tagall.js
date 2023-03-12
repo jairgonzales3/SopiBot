@@ -4,11 +4,10 @@ global.dfail('admin', m, conn)
 throw false
 }
 let pesan = args.join` `
-let oi = `*LA REVENTA DE ESTE BOT ESTA PROHIBIDA, PARA ADQUIRIRLO COMUNICARSE A :
-Wa.me/+56954390663* ${pesan}`
+let oi = `*@aea.sopiix* ${pesan}`
 let teks = `*SOPI BOT LOS INVOCA BOTS*\n\n❏ ${oi}\n\n❏ *𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙰𝚂:*\n`
 for (let mem of participants) {
-teks += `🐼 @${mem.id.split('@')[0]}\n`}
+teks += `🦊 @${mem.id.split('@')[0]}\n`}
 teks += `*└*@aea.sopiix\n\n*<3*`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
